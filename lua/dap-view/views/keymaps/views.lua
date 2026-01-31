@@ -79,7 +79,7 @@ M.views_keymaps = function()
         end
     end)
 
-    keymap("a", function()
+    keymap("k", function()
         if state.current_section == "watches" then
             require("dap-view.watches.keymaps").new_expression(true)
         end
@@ -108,7 +108,7 @@ M.views_keymaps = function()
         end
     end)
 
-    keymap("e", function()
+    keymap("c", function()
         if state.current_section == "watches" then
             local cursor_line = api.nvim_win_get_cursor(state.winnr)[1]
 
@@ -139,7 +139,7 @@ M.views_keymaps = function()
         end
     end)
 
-    keymap("c", function()
+    keymap("l", function()
         if state.current_section == "watches" then
             local cursor_line = api.nvim_win_get_cursor(state.winnr)[1]
 
